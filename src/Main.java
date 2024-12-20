@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.util.List;
 public class Main {
-    // Example usage
+
     public static void main(String[] args) {
         String fileName = "C:\\Users\\matus\\IdeaProjects\\OSSP\\Matica_KE_(0460).txt"; // Specify the input file name
 

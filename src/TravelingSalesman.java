@@ -30,7 +30,6 @@ public class TravelingSalesman {
         distances = matrix;
     }
 
-    // Construct the route based on the algorithm
     public static List<Integer> constructRoute() {
         route = new ArrayList<>();
         int n = distances.length;
