@@ -35,17 +35,17 @@ public class SimulatedAnnealing {
                 w = 0;
             }
 
-            if (neighborDistance < currentDistance) {
+            if (neighborDistance <= currentDistance) {
                 currentRoute = neighbor;
                 currentDistance = neighborDistance;
                 r = 0;
-                if (currentDistance < bestDistance) {
+                if (currentDistance <= bestDistance) {
                     bestRoute = currentRoute;
                     bestDistance = currentDistance;
                 }
             } else {
                 double prob = Math.exp((neighborDistance - currentDistance) / t);
-                if (random.nextDouble() < prob) {
+                if (random.nextDouble() <= prob) {
                     currentRoute = neighbor;
                     currentDistance = neighborDistance;
                     r = 0;
