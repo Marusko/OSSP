@@ -3,7 +3,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        String fileName = "C:\\Users\\matus\\IdeaProjects\\OSSP\\Matica_KE_(0460).txt"; // Specify the input file name
+        String fileName = "C:\\Users\\matus\\IdeaProjects\\OSSP\\data\\Matica_KE_(0460).txt";
 
         try {
             TravelingSalesman.parseDistanceMatrix(fileName);
